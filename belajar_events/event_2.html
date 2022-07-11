@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Events</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        
+        // event click (2 kali)
+        $(document).ready( function() {
+            $(".pict").dblclick( function() {
+                alert('Terimakasih sudah meng-klik gambar..');
+            })
+        })
+
+    </script>
+    <style>
+        .pict {
+            cursor: pointer;
+        }
+
+        .pict:hover {
+            filter: brightness(0.8);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Belajar Event</h1>
+
+    <p class="tulisan">Klik gambar dibawah ini</p>
+    <img src="gambar/thum1.jpg" alt="Thumb" title="Thumb" class="pict" width="100" height="100">
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman 2</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+
+        // $(document).ready(function() {
+        //     $("#p3").addClass("p3");;
+        // })
+
+        function seleksi() {
+            $(".judul").addClass("h1")
+            $("#p3, p").addClass("p3")
+            alert("Selector Terpilih");
+        }
+
+    </script>
+    <style>
+        .h1 {
+            background-color: cadetblue;
+            width: 400px;
+            padding: 3px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+
+        .p3 {
+            background-color: cadetblue;
+            padding: 3px;
+            width: 400px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="judul">Seleksi Paragraf</h1>
+    <p>ini paragraf 1</p>
+    <p>ini paragraf 2</p>
+    <p id="p3">ini paragraf 3</p>
+    <p>ini paragraf 4</p>
+
+    <div class="btn">
+        <button type="button" onclick="seleksi()">Pilih</button>
+    </div>
+
+</body>
+</html>

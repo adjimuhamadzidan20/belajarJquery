@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Resize</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+
+        $(window).resize(function() {
+            $('#log').append('<div>Handler for .resize(handler) called.</div>');
+        })
+
+    </script>
+    <style>
+
+        #lebar-jendela {
+            background-color: aquamarine;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="lebar-jendela">
+        <p>Lebar jendela browser :</p>
+    </div>
+
+    <script>
+
+        var $window = $(window), $div = $('#lebar-jendela');
+
+        $window.resize(function() {
+            $div.append(console.log($window.width()));
+        })
+
+    </script>
+</body>
+</html>

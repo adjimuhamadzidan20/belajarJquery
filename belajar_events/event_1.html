@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Events</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        // event click (1 kali)
+        $(document).ready( function() {
+            $(".tulisan").click( function() {
+                alert('Terimakasih sudah meng-klik..');
+            })
+        })
+
+    </script>
+    <style>
+        .tulisan {
+            cursor: pointer;
+        }
+
+        .tulisan:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Belajar Event</h1>
+
+    <p class="tulisan">Klik tulisan ini</p>
+</body>
+</html>
