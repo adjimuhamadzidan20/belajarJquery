@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide toggle</title>
+    <script src="jquery/jquery-3.6.0.js"></script>
+    <style>
+        button {
+            cursor: pointer;
+        }
+
+        p {
+            width: 500px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <blockquote>
+        <h1>Slide Toggle</h1>
+        <button type="button">SlideToggle</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sint doloribus, 
+        eum accusamus, incidunt ullam voluptates voluptatibus perferendis dolor quisquam 
+        qui cumque impedit natus veritatis aliquid sunt minus aspernatur aperiam.</p>
+    </blockquote>
+
+    <div class="gambar">
+        <figure>
+            <img src="gambar/thum1.jpg" alt="gambar" width="200" title="Gambar"> 
+            <figcaption>Sample Picture</figcaption>
+        </figure>
+    </div>
+
+    <script>
+        $("button").click(function() {
+            $("p").slideToggle(400);
+        })
+    </script>
+</body>
+</html>

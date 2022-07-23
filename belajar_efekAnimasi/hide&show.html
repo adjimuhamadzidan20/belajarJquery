@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hide & show</title>
+    <script src="jquery/jquery-3.6.0.js"></script>
+    <script>
+        function tampil() {
+            $(".gambar").show('fast');
+        }
+
+        function sembunyi() {
+            $(".gambar").hide('fast');
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Hide & Show</h1>
+    <div class="gambar">
+        <img src="gambar/thum1.jpg" alt="gambar" width="200">    
+    </div>
+    <div class="btn">
+        <button type="button" onclick="tampil()" style="cursor: pointer;">Show</button>
+        <button type="button" onclick="sembunyi()" style="cursor: pointer;">Hide</button>
+    </div>
+</body>
+</html>

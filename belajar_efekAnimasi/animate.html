@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animate</title>
+    <script src="jquery/jquery-3.6.0.js"></script>
+    <style>
+        div {
+            background-color: cornflowerblue;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            left: 250px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Animate</h1>
+
+    <button id="top" type="button">Up</button>
+    <button id="bottom" type="button">Down</button>
+    <button id="left" type="button">Left</button>
+    <button id="right" type="button">Right</button>
+    
+    <div class="kotak"></div>
+
+    <script>
+        $("#right").click(function() {
+            $(".kotak").animate({"left": "+=50px"}, "slow");
+        });
+
+        $("#left").click(function() {
+            $(".kotak").animate({"left": "-=50px"}, "slow");
+        });
+
+        $("#bottom").click(function() {
+            $('.kotak').animate({"top": "+=50px"}, "slow");
+        });
+
+        $("#top").click(function() {
+            $('.kotak').animate({"top": "-=50px"}, "slow");
+        });
+    </script>
+</body>
+</html>
